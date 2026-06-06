@@ -1,0 +1,13 @@
+[package]
+name = "plato-dashboard"
+version = "0.1.0"
+edition = "2021"
+description = "Terminal-based dashboard for monitoring Plato rooms — live sensors, alarms, sparklines, and fleet health."
+license = "MIT"
+
+[[bin]]
+name = "plato-dashboard"
+path = "src/main.rs"
+
+[dependencies]
+chrono = "0.4"
