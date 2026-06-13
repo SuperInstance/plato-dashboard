@@ -1,14 +1,12 @@
 [package]
-repository = "https://github.com/SuperInstance/plato-dashboard"
 name = "plato-dashboard"
 version = "0.1.0"
 edition = "2021"
-description = "Terminal-based dashboard for monitoring Plato rooms — live sensors, alarms, sparklines, and fleet health."
-license = "MIT"
-
-[[bin]]
-name = "plato-dashboard"
-path = "src/main.rs"
+license = "Apache-2.0"
+description = "Fleet dashboard rendering for PLATO nervous system"
+repository = "https://github.com/SuperInstance/plato-dashboard"
 
 [dependencies]
-chrono = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
